@@ -27,4 +27,3 @@ $(document).ready(function () {
     var header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 10);
   });
-

@@ -5,7 +5,7 @@ This is official website of Deliverance Church Utawala
 2.CSS
 3.JAVASCRIPT
 # Installation Process
-Church Website 
+Church Website
 https://github.com/Trevor-Kayeyia-Madara/dcutawala.git
 ## Live Link
 [Website](https://www.dcutawala.org/)

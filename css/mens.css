@@ -1,4 +1,3 @@
-   
 /* ----------
    FONTS
    ---------- */
@@ -34,6 +33,7 @@
      box-sizing: border-box;
      outline: 0;
    }
+   
    ::before,
    ::after {
      box-sizing: border-box;
@@ -71,17 +71,15 @@
      max-width: 100%;
      vertical-align: middle;
    }
-   
    .container{
     width: var(--container-width-lg);
     max-width: 1800px;
     margin: 0 auto;
    }
    section{
-    padding: 6rem 0;
-    margin: 5rem 0 ;
+    padding: 5rem 0;
+    margin: 2rem 0 ;
    }
-
    .reveal{
     position: relative;
     transform: translateY(150px);
@@ -227,7 +225,7 @@
      border-radius: 10px;
    }
    
-
+   
    /* ----------
       Hero-Image
       ---------- */
@@ -263,6 +261,31 @@
       font-size: 15px;
       font-weight: 500;
       text-transform: uppercase;
+   }
+   /*-----------
+   Men
+   ------------*/
+   .men{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+   }
+   .men-container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   
+   .men-container p{
+    text-align: left;
+    font-size: 14px;
+   }
+   .men-container ol li{
+    text-align: left;
+    font-size: 14px;
    }
   /* -------------
         Footer
@@ -487,4 +510,11 @@ text-align: center;
   top: 20%;
   left: 4%;
   }
+  .men{
+    height: 100%;
+    padding: 0;
+   }
+   .men-container{
+    display: block;
+   }
 }

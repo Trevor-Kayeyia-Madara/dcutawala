@@ -1,4 +1,3 @@
-
 /* ----------
    FONTS
    ---------- */
@@ -9,11 +8,6 @@
       ---------- */
    
    :root {
-    --level-1: #8dccad;
-  --level-2: #f5cc7f;
-  --level-3: #7b9fe0;
-  --level-4: #f27c8d;
-  --black: black;
      --primary-color: #fff;
      --secondary-color: #9b6932;
      --tertiary-color: rgb(255,255,255);
@@ -39,9 +33,7 @@
      box-sizing: border-box;
      outline: 0;
    }
-   ol {
-    list-style: none;
-  }
+   
    ::before,
    ::after {
      box-sizing: border-box;
@@ -79,15 +71,14 @@
      max-width: 100%;
      vertical-align: middle;
    }
-   
    .container{
     width: var(--container-width-lg);
     max-width: 1800px;
     margin: 0 auto;
    }
    section{
-    padding: 6rem 0;
-    margin: 5rem 0 ;
+    padding: 5rem 0;
+    margin: 2rem 0 ;
    }
    .reveal{
     position: relative;
@@ -234,7 +225,7 @@
      border-radius: 10px;
    }
    
-
+   
    /* ----------
       Hero-Image
       ---------- */

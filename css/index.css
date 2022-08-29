@@ -78,8 +78,8 @@
     margin: 0 auto;
    }
    section{
-    padding: 6rem 0;
-    margin: 5rem 0 ;
+    padding: 5rem 0;
+    margin: 2rem 0 ;
    }
    .reveal{
     position: relative;
@@ -233,7 +233,7 @@
 .home{
   height: calc(100vh);
   position: relative;
-  top: 5rem ;
+  top: 0rem ;
   background-image: linear-gradient(to left, rgba(164,66,0, 0.8), rgba(166, 116, 9, 0.742));
   display: grid;
   place-items: center;
@@ -275,19 +275,19 @@
   .about{
     height: 100vh;
     position: relative;
-  top: 5rem ;
+  top: 0rem ;
   padding: 0;
   margin: 0;
   display: grid;
   place-items: center;
   overflow: hidden;
-  margin-bottom: 10rem;
+  
   }
   .about .title{
       text-align: center;
       font-size: 40px;
       font-weight: 500;
-      margin-bottom: 60px;
+      margin-bottom: 20px;
       padding-bottom: 20px;
       color: #9b6932;
   }
@@ -689,6 +689,68 @@
       .social-icons .youtube i:hover{
         transform: scale(1.05);
       }
+       /* -----------
+      Form
+        ---------*/
+        .contact{
+          height: 120vh;
+          width: 100%;
+          top:0%;
+          margin:0;
+          padding: 0;
+          background: #9b6932;
+          margin-bottom: 5rem;
+        }
+        .contact-container{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+         
+        }
+        form{
+          margin-top: 20px;
+          flex-direction: column;
+          box-shadow: 0px 37px 101px -35px rgba(0,0,0,0.75);
+          -webkit-box-shadow: 0px 37px 101px -35px rgba(0,0,0,0.75);
+          -moz-box-shadow: 0px 37px 101px -35px rgba(0,0,0,0.75);
+         
+          background:  #fff;
+          display: flex;
+          padding: 2vw 4vw;
+          width: 90%;
+          max-width: 600px;
+          border-radius: 10px;
+        }
+        form h5{
+          margin-bottom: 20px;
+          font-weight: 800;
+        }
+        form input, form textarea{
+          border: 0;
+          margin: 10px 0;
+          padding: 20px;
+          outline:dashed;
+          font-size: 16px;
+          border-radius: 10px;
+        }
+     
+        .butn{
+          background: #a44200;
+          color: white;
+          padding: 20px;
+          outline: none;
+          font-size: 18px;
+          cursor: pointer;
+          border: none;
+          width: 180px;
+          margin: 12px auto 0;
+          border-radius: 30px;
+          transition: 0.3s;
+        }
+        .butn:hover{
+          transform: scale(1.05);
+        }
       /* -------------
         Footer
         ---------*/
@@ -1043,6 +1105,7 @@
         width: 100%;
        }
        .hero-image{
+        height: 20vh;
         background-position: center;
         background-size: cover;
        }
@@ -1059,6 +1122,13 @@
         padding: 4px 5px;
         text-align: center;
        }
+       .contact{
+        height: 100%;
+        
+        top:0%;
+        margin:0;
+        padding: 0;
+      }
        .main-content{
         flex-direction: column;
        }

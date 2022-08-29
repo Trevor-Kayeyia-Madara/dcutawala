@@ -72,4 +72,3 @@ var swiper = new Slider(".slide-content", {
       },
   },
 });
-
