@@ -233,8 +233,8 @@
 .home{
   height: calc(90vh);
   position: relative;
-  top: 0rem ;
-  background-image: linear-gradient(to left, rgba(164,66,0, 0.8), rgba(166, 116, 9, 0.742));
+  top: 0;
+  background-image: linear-gradient(40deg, rgba(164,66,0, 0.8), rgba(166, 116, 9, 0.742));
   display: grid;
   place-items: center;
   overflow: hidden;
@@ -250,7 +250,7 @@
   height: 100%;
 }
 .home-left h1{
-  color: var(--white-900);
+  color: var(--primary-color);
   margin-bottom: 0.6rem;
 }
 .home-left h2{
@@ -267,9 +267,10 @@
   position: relative;
   height: 90%;
 }
-.home-right h2{
-  color: var(--white-900);
+.home-right h3{
+  color: #fff;
   margin-bottom: 0.6rem;
+  font-size: 20px;
 }
 
 
@@ -570,58 +571,63 @@
     .swiper-pagination-bullet-active{
       background-color: #9b6932;
     }
-   /* ----------
-      Hero-Image
-      ---------- */
-      .hero {
-        top: 0;
-        height: 100%;
-        width: 100vw;
-        margin: 0;
-       
-    }
-    .hero-image {
-      background-image: linear-gradient(rgba(166, 66, 9, 0.836), rgba(166, 66, 9, 0.836)), url("https://www.dcutawala.org/media/media.jpg");
-      height: 50vh;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
+  /*-----------------------
+    Poster
+    ----------------------*/
+    .poster{
+      height: 100vh;
       position: relative;
+    top: 0rem ;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
     }
-    .hero-text {
+    .poster .title{
       text-align: center;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      color: white;
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      color: #9b6932;
     }
-    
-    .hero-text .button{
-      border: none;
-      font-size: 16px;
-      color: #FFF;
-      padding: 8px 16px;
-      background-color: #9b6932;
-      border-radius: 6px;
-      margin: 14px;
-      cursor: pointer;
-      transition: all 0.3s ease;
+    .poster .title span{
+      color: var(--blue-900);
     }
-    
-    .hero-text .button > a{
-      color: #fff;
-      padding: 14px 16px;
+    .poster-container{
+      display: grid;
+      grid-template-columns: 40% 60%;
+      height: 100%;
     }
-     .hero-text .button:hover{
-      background: #9b6932;
-      transform: scale(1.05);
+    .poster-left{
+      display: flex;
+      position: relative;
+      height: 100%;
     }
+    .poster-left .poster-image img{
+      border-radius:6px;
+      width: 300px;
+    }
+    .poster-right{
+      display: flex;
+      position: relative;
+      height: 100%;
+    }
+    .poster-right p{
+      left: 0;
+      right: 50%;
+      text-align: left;
+      align-self: left;
+      color: var(--secondary-color);
+    }
+  
+  
     /* -------------
        Sermon 
        -----------*/
        .sermon{
-        height: 100vh;
+        height: 70vh;
         position: relative;
       top: 0 ;
       padding: 0;
@@ -629,7 +635,8 @@
       display: grid;
       place-items: center;
       overflow: hidden;
-      margin-bottom: 10rem;
+      margin-bottom: 4rem;
+      background-image: linear-gradient(80deg, rgba(164,66,0, 0.8), rgba(166, 116, 9, 0.742));
       }
       .sermon .title{
           text-align: center;
@@ -637,7 +644,7 @@
           font-weight: 500;
           margin-bottom: 60px;
           padding-bottom: 20px;
-          color: #9b6932;
+          color: var(--primary-color);
       }
      
       .sermon-container{
@@ -666,7 +673,7 @@
         right: 50%;
         text-align: center;
         align-items: right;
-        color: var(--secondary-color);
+        color: var(--primary-color);
       }
       .social-icons{
         display:flex;
@@ -693,68 +700,7 @@
       .social-icons .youtube i:hover{
         transform: scale(1.05);
       }
-       /* -----------
-      Form
-        ---------*/
-        .contact{
-          height: 120vh;
-          width: 100%;
-          top:0%;
-          margin:0;
-          padding: 0;
-          background: #9b6932;
-          margin-bottom: 5rem;
-        }
-        .contact-container{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-         
-        }
-        form{
-          margin-top: 20px;
-          flex-direction: column;
-          box-shadow: 0px 37px 101px -35px rgba(0,0,0,0.75);
-          -webkit-box-shadow: 0px 37px 101px -35px rgba(0,0,0,0.75);
-          -moz-box-shadow: 0px 37px 101px -35px rgba(0,0,0,0.75);
-         
-          background:  #fff;
-          display: flex;
-          padding: 2vw 4vw;
-          width: 90%;
-          max-width: 600px;
-          border-radius: 10px;
-        }
-        form h5{
-          margin-bottom: 20px;
-          font-weight: 800;
-        }
-        form input, form textarea{
-          border: 0;
-          margin: 10px 0;
-          padding: 20px;
-          outline:dashed;
-          font-size: 16px;
-          border-radius: 10px;
-        }
-     
-        .butn{
-          background: #a44200;
-          color: white;
-          padding: 20px;
-          outline: none;
-          font-size: 18px;
-          cursor: pointer;
-          border: none;
-          width: 180px;
-          margin: 12px auto 0;
-          border-radius: 30px;
-          transition: 0.3s;
-        }
-        .butn:hover{
-          transform: scale(1.05);
-        }
+      
       /* -------------
         Footer
         ---------*/
@@ -766,7 +712,7 @@
     margin: 0;
    place-items: center;
     overflow: hidden;
-    background-image: linear-gradient(to left, rgba(164,66,0, 0.8), rgba(166, 116, 9, 0.742));
+    background-image: linear-gradient(40deg, rgba(164,66,0, 0.8), rgba(166, 116, 9, 0.742));
     color: #fcfcfc;
         }
         .main-content{
@@ -854,6 +800,25 @@
      .about-right p, .sermon-right p{
       text-align:justify;
      }
+     .poster{
+      height: 100%;
+      padding: 14rem 0;
+      }
+      .poster-container{
+        grid-template-columns: 60% 40%;
+        margin-top: 3.4rem;
+       }
+       .poster-left{
+        margin-bottom: 0rem;
+        width: 70%;
+       }
+       .poster-right{
+        align-self: right;
+        width: 100%;
+       }
+       .poster-right p{
+        text-align:justify;
+       }
    }
    @media (max-width: 1080px) {
      header .logo {
@@ -1003,7 +968,26 @@
       width: 50%;
       height: 100%;
      }
-     
+     .poster{
+      height: 100%;
+      padding: 10rem 0;
+      }
+      .poster-container{
+        grid-template-columns: 60% 40%;
+        margin-top: 3.4rem;
+       }
+       .poster-left{
+        margin-bottom: 0rem;
+        width: 80%;
+       }
+       .poster-right{
+        left: 0;
+        align-items: center;
+        width: 80%;
+       }
+       .poster-right p{
+        text-align: left;
+       }
    }
 
    /* phones media */
@@ -1113,6 +1097,25 @@
         background-position: center;
         background-size: cover;
        }
+       .poster{
+        height: 100vh;
+        padding: 0;
+      }
+      .poster-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 1.4rem;
+      }
+      .poster-left{
+        width: 100%;
+      }
+      .poster-right{
+        width: 100%;
+      }
+      .poster-right p{
+        text-align: left;
+      }
+      
        .hero-text{
         text-align: center;
         position: absolute;
