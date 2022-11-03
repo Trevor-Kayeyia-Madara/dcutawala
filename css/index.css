@@ -231,7 +231,7 @@
       home
       ---------- */
 .home{
-  height: calc(100vh);
+  height: calc(90vh);
   position: relative;
   top: 0rem ;
   background-image: linear-gradient(to left, rgba(164,66,0, 0.8), rgba(166, 116, 9, 0.742));
@@ -265,7 +265,11 @@
 .home-right{
   display: flex;
   position: relative;
-  height: 100%;
+  height: 90%;
+}
+.home-right h2{
+  color: var(--white-900);
+  margin-bottom: 0.6rem;
 }
 
 
@@ -1039,13 +1043,13 @@
      }
      .home-container{
       grid-template-columns: 1fr;
-      margin-top: 4.4rem;
+      margin-top: 4.0rem;
      }
      .home-left{
       text-align: center;
       font-size: 10px;
      }
-     .home-image{
+      .home-right .home-image{
       position: relative;
       top: 0;
      }

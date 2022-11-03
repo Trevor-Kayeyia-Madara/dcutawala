@@ -262,6 +262,58 @@
       font-weight: 500;
       text-transform: uppercase;
     }
+    /*-----------------------
+    Poster
+    ----------------------*/
+    .poster{
+      height: 100vh;
+      position: relative;
+    top: 0rem ;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    }
+    .poster .title{
+      text-align: center;
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      color: #9b6932;
+    }
+    .poster .title span{
+      color: var(--blue-900);
+    }
+    .poster-container{
+      display: grid;
+      grid-template-columns: 40% 60%;
+      height: 100%;
+    }
+    .poster-left{
+      display: flex;
+      position: relative;
+      height: 100%;
+    }
+    .poster-left .poster-image img{
+      border-radius:6px;
+      width: 300px;
+    }
+    .poster-right{
+      display: flex;
+      position: relative;
+      height: 100%;
+    }
+    .poster-right p{
+      left: 0;
+      right: 50%;
+      text-align: left;
+      align-self: left;
+      color: var(--secondary-color);
+    }
+  
+  
     /*------------------
     Calendar
     -------------------*/
@@ -458,7 +510,25 @@
           .container{
             width: var(--container-width-lg);
           }
-        
+          .poster{
+          height: 100%;
+          padding: 14rem 0;
+          }
+          .poster-container{
+            grid-template-columns: 60% 40%;
+            margin-top: 3.4rem;
+           }
+           .poster-left{
+            margin-bottom: 0rem;
+            width: 70%;
+           }
+           .poster-right{
+            align-self: right;
+            width: 100%;
+           }
+           .poster-right p{
+            text-align:justify;
+           }
         }
 @media (max-width: 1080px) {
   header .logo {
@@ -543,6 +613,26 @@
   .hero-image,.event-image{
     height: 20vh;
   }
+  .poster{
+    height: 100%;
+    padding: 10rem 0;
+    }
+    .poster-container{
+      grid-template-columns: 60% 40%;
+      margin-top: 3.4rem;
+     }
+     .poster-left{
+      margin-bottom: 0rem;
+      width: 80%;
+     }
+     .poster-right{
+      left: 0;
+      align-items: center;
+      width: 80%;
+     }
+     .poster-right p{
+      text-align: left;
+     }
 }
 @media (max-width:940px) {
   .container{
@@ -597,13 +687,25 @@ position: absolute;
 top: 20%;
 left: 4%;
 }
-.family{
-  height: 100%;
+.poster{
+  height: 100vh;
   padding: 0;
- }
- .family-container{
-  display: block;
- }
+}
+.poster-container{
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 1.4rem;
+}
+.poster-left{
+  width: 100%;
+}
+.poster-right{
+  width: 100%;
+}
+.poster-right p{
+  text-align: left;
+}
+
 .main-content{
 flex-direction: column;
 }
