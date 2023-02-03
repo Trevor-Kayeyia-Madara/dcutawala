@@ -268,7 +268,7 @@
   height: 90%;
 }
 .home-right h3{
-  color: #fff;
+  color: var(--white-900);
   margin-bottom: 0.6rem;
   font-size: 20px;
 }

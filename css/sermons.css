@@ -247,31 +247,7 @@
       font-weight: 500;
       text-transform: uppercase;
    }
-    /* --------
-        video
-        ------*/
-        .video{
-            height: 100vh;
-            position: relative;
-          top: 0 ;
-          padding: 0;
-          margin: 0;
-          display: flex;
-          align-items: center;
-          justify-content: center;	
-          
-        }
-        .video-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-           text-align: center;
-        }
-        .video-container .data{
-            width: 760px;
-            height: 361px;
-        }
-
+   
         /* ----------
         Sermon Layout
         -----------*/
@@ -287,85 +263,86 @@
             padding:10px 10px;
         }
         .column .watch{
-            width: 450px;
-            height: 360px;
+            width:450px;
+            height: 250px;
             text-align: center;
+            padding: 10px;
         }
+       
         .column h2{
             font-size: 15px;
         }
-       
-     /* -------------
+    /* -------------
         Footer
         ---------*/
         .footer{
-            height: 100%;
-      position: relative;
-      top: 0;
-      padding: 0;
-      margin: 0;
-     place-items: center;
-      overflow: hidden;
-      background-image: linear-gradient(to left, rgba(164,66,0, 0.8), rgba(166, 116, 9, 0.742));
-      color: #fcfcfc;
-          }
-          .main-content{
-            padding: 10px 15px;
-            display: flex;
-          }
-          .main-content .box{
-            flex: 1; /*grow*/
-            padding: 10px 20px;
-          }
-           .box h2{
-            font-size: 1.125rem;
-            font-weight: 600;
-            text-transform: uppercase;
-          }
-          .box .context{
-            margin: 20px 0px 0px 0;
-          }
-          .left .context p{
-            text-align: justify;
-          }
-          .left .context .social{
-            margin: 20px 0 0 0;
-          }
-          .left .context .social a{
-            padding: 0 2px;
-          }
-          .left .context .social a span{
-            height: 40px;
-            width: 40px;
-            text-align: center;
-            background: #a44200;
-            line-height: 40px;
-            border-radius: 50%;
-            color: #fcfcfc;
-            transition: 0.3s;
-            font-size: 18px;
-          }
-          .left .context .social a span:hover{
-            background: #9b6932;
-            transform: scale(1.05);
-          }
-          .right .context a{
-           color: #fcfcfc;
-           transition: 0.3s;
-          }
-            hr{
-            color: #fcfcfc;
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-          }
-          .copyright{
-            padding: 15px;
-            font-size: 14px;
-           
-            text-align: center;
-          }
-
+          height: 100%;
+    position: relative;
+    top: 0;
+    padding: 0;
+    margin: 0;
+   place-items: center;
+    overflow: hidden;
+    background-image: linear-gradient(40deg, rgba(164,66,0, 0.8), rgba(166, 116, 9, 0.742));
+    color: #fcfcfc;
+        }
+        .main-content{
+          padding: 10px 15px;
+          display: flex;
+        }
+        .main-content .box{
+          flex: 1; /*grow*/
+          padding: 10px 20px;
+        }
+         .box h2{
+          font-size: 1.125rem;
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        .box .context{
+          margin: 20px 0px 0px 0;
+        }
+        .left .context p{
+          text-align: justify;
+        }
+        .left .context .social{
+          margin: 20px 0 0 0;
+        }
+        .left .context .social a{
+          padding: 0 2px;
+        }
+        .left .context .social a span{
+          height: 40px;
+          width: 40px;
+          text-align: center;
+          background: #a44200;
+          line-height: 40px;
+          border-radius: 50%;
+          color: #fcfcfc;
+          transition: 0.3s;
+          font-size: 18px;
+        }
+        .left .context .social a span:hover{
+          background: #9b6932;
+          transform: scale(1.05);
+        }
+        .right .context a{
+         color: #fcfcfc;
+         transition: 0.3s;
+        }
+          hr{
+          color: #fcfcfc;
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .copyright{
+          padding: 15px;
+          font-size: 14px;
+         
+          text-align: center;
+        }   
+    
   /* responsive media */
   @media (max-width: 1080px) {
     header .logo {
